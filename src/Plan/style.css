@@ -1,0 +1,25 @@
+input {
+    width: 280px;
+    height: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: "Play", sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.container-inline {
+    display: flex;
+    justify-content: baseline;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 360px;
+    background-color: rgba(240, 255, 255, 0.331);
+    margin: 10px;
+    font-family: "Play", sans-serif;
+    padding-left: 10px;
+}

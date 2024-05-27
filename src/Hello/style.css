@@ -1,0 +1,53 @@
+.container-main {
+    min-height: 100vh;
+    background: url('../assets/font.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    min-height: 100vh;
+}
+.container-log {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 250px;
+}
+h1,button {
+    font-family: "Play", sans-serif;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 4px 4px 4px #000;
+    text-align: center;
+}
+button {
+    color: white;
+    font-size: 27px;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: black;
+}
+button:hover {
+    border-color: greenyellow;
+    cursor: pointer;
+    color: greenyellow;
+}
+
+@media all and (max-width: 500px) {
+    
+    h1 {
+        font-size: 35px;
+        }
+    button {
+        font-size: 18px;
+        }
+}
