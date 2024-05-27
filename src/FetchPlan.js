@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 const getAllPlans = (setPlan) => {
-    axios.get("http://localhost:4040")
+    axios.get("https://training-plan-backend.onrender.com")
     .then(({data}) => {console.log(data)
     setPlan(data)})
 }
 const addPlan = (title, setTitle, setPlan) => {
-    axios.post("http://localhost:4040/saveTraining", {title})
+    axios.post("https://training-plan-backend.onrender.com/saveTraining", {title})
     .then((data) => {
         console.log(data)
         setTitle("")
@@ -14,7 +14,7 @@ const addPlan = (title, setTitle, setPlan) => {
     })
 }
 const editPlan = (planId, title, setPlan, setTitle,setEditing) => {
-    axios.post("http://localhost:4040/editTraining", {_id: planId, title})
+    axios.post("https://training-plan-backend.onrender.com/editTraining", {_id: planId, title})
     .then((data) => {
         console.log(data)
         setTitle("")
@@ -24,7 +24,7 @@ const editPlan = (planId, title, setPlan, setTitle,setEditing) => {
     })
 }
 const deletePlan = (_id, setPlan) => {
-    axios.post("http://localhost:4040/deleteTraining", {_id})
+    axios.post("https://training-plan-backend.onrender.com/deleteTraining", {_id})
     .then((data) => {
         console.log(data)
         getAllPlans(setPlan)
