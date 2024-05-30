@@ -19,7 +19,7 @@
     align-items: center;
     margin-top: 250px;
 }
-h1,button {
+h1,h2,button {
     font-family: "Play", sans-serif;
 }
 h1 {
@@ -27,6 +27,9 @@ h1 {
     font-size: 50px;
     text-shadow: 4px 4px 4px #000;
     text-align: center;
+}
+h2 {
+    color: white;
 }
 button {
     color: white;
