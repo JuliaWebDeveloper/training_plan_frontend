@@ -13,7 +13,7 @@ function Hello() {
   const {isLoading} = useAuth0;
   if(isLoading)
   return 
-  <h1>Загрузка...</h1>
+  <h2>Загрузка...</h2>
   
     return (
       <div className='container-main'>
